@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+function testObj(){      
+    var json = '{"firstkey":"firstvalue","secondkey":"secondvalue"}';
+    $.ajax({ 
+    	type: 'POST', url: 'http://homepages.dcc.ufmg.br/~maria.luisa/api/helpfestival/index.php', data: {json: json, contentType : 'application/json'}, success : function(data){
+        console.log(data);
+    }}); 
+
+}  
+    testObj();                  
+</script>

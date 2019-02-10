@@ -1,0 +1,454 @@
+/*
+ *
+ *		Aplicativo Help Festival			
+ *		----------------------------------------------------
+ *		Desenvolvido por marialuisaufmg@gmail.com
+ *
+ *		Estilos 
+ *		styles.css
+ *
+ */
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../fonts/BebasNeue.otf"); /* IE9 Compat Modes */
+}
+@font-face {
+    font-family: "Bebas Neue Light";
+    src: url("../fonts/bebas-neue-light.otf"); /* IE9 Compat Modes */
+}
+
+h1,h2,h3,h4{
+	font-family: "Bebas Neue", Arial, sans-serif;
+}
+.menu-lateral ion-view h1{
+	margin-top: 30px !important;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #000 !important;
+}
+/* menu lateral */
+.menu-lateral *{
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.menu-lateral ion-side-menu{
+	background-image: url(../img/fundo.jpg);
+	background-size: auto 100%;
+	background-position: right;
+	background-color: rgba(18,136,192,1);
+}
+.menu-lateral ion-side-menu ion-content{
+	/*background-color: rgba(18,136,192,.45);*/
+	/*background-color: rgba(21,39,54,.7);*/
+	/*background-color: rgba(255,255,255,.6);*/
+	background-color: rgba(0,0,0,.9);
+}
+.menu-lateral ion-side-menu .item{
+	background: transparent !important;
+	border: none;
+	border-color: rgba(255,255,255,.1);
+	border-bottom: solid 1px rgba(255,255,255,.1) !important;
+	color: #fff;
+	text-transform: uppercase;
+	/*text-shadow: -2px 2px rgba(0,0,0,.7); */
+	font-weight: bold;
+	/*font-family: "Bebas Neue", Arial, sans-serif;
+	font-size: 24px;
+	letter-spacing: .1em;*/
+}
+.menu-lateral ion-side-menu .item-complex .item-content{
+	background: transparent !important;
+	padding-left: 50px;
+}
+.menu-lateral ion-side-menu ion-header-bar.bar.bar-stable{
+	height: 130px;
+	padding-top: 15px;
+	text-align: center;
+	background: transparent;
+	/*background-color: rgba(70,94,105,.7);*/
+	background-color: rgba(0,0,0,.87) !important;
+	border: none; 
+}
+.menu-lateral ion-side-menu ion-header-bar.bar.bar-stable .logo-menu{
+	text-align: center;
+	width: 100%;
+}
+.menu-lateral ion-side-menu ion-header-bar.bar.bar-stable .logo-menu img{
+	width: 150px;
+	margin: 0 auto;
+	display: block;
+}
+.menu-lateral ion-side-menu .has-header{
+	top: 130px;
+}
+.menu-lateral .icon-event{
+	width: 39px;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+}
+
+/* barra superior */
+.bar-header {
+	box-shadow: none;
+	height: 45px;
+}
+.bar {
+	background-size: 100% 0px;
+}
+.bar-stable.bar.bar-header{
+	/*background: rgba(18,136,192,1);*/
+	/*background-image: url(../img/fundo_3.jpg);*/
+	background: transparent !important;
+	background-size: 100%;
+	background-position: right;
+	background-color: #eee;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.05) !important;
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.05) !important;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.05) !important;
+}
+.bar-stable.bar.bar-header *{
+	color: #000;
+}
+
+/* Views */
+ion-view{
+	background: #fafafa !important;
+}
+ion-view ion-content{
+	padding: 30px;
+}
+.view{
+
+}
+
+/* Botoes de contato */
+.button-contato{}
+.button-contato{
+	text-decoration: none !important;
+	color: #333;
+	display: block;
+	border: solid 1px #2192ba !important;
+	padding: 10px;
+	margin-bottom: 5px;
+	background: rgba(255,255,255,.8);
+}
+.button-contato i{
+	color: #2192ba;
+	font-size: 20px;
+	text-align: center;
+	margin-right: 7px;
+}
+.button-contato span{
+	position: relative;
+	/*left: 20px;*/
+}
+
+/* Home */
+.home-view{
+	
+	background-image: url(../img/bg.jpg) !important;
+	background-size: auto 100% !important;
+	background-position: right !important;
+	background-color: #eee !important;
+	/*background-color: rgba(18,136,192,1);*/
+}
+.home-view ion-content{
+	padding: 0px !important;
+}
+.home-view .logo{
+	width: 100%;
+	text-align: center;
+}
+.home-view .logo img{
+	width: 40%;
+	max-width: 40%;
+	margin: 0px auto;
+	margin-top: 20px;
+}
+.home-view .welcome{
+	text-transform: uppercase;
+	font-family: "Bebas Neue", Arial, sans-serif;
+	font-size: 30px;
+	text-align: center;
+	width: 100%;
+}
+.home-view .welcome span{
+	/*font-weight: bold !important;*/
+	font-family: "Bebas Neue Light", Arial, sans-serif;
+}
+.home-view .menu-home{
+	display: block;
+    /* background-image: url(../img/bg_geometrico_3.png); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+	text-shadow: -2px 2px rgba(0,0,0,.7);
+	/*background-color: rgba(0,0,0,.6);*/
+	background-color: rgba(18,136,192,.75);
+    /*background-color: rgba(255, 255, 255, .2);*/
+    /* height: 80%; */
+    border-top: solid 1px #000 !important;
+    text-align: center;
+    padding-top: 30px;
+}
+.home-view .menu-home .item-menu-home{
+	/*width: 49.5%;*/
+	width: 30%;
+	display: inline-block;
+	margin: 0 !important;
+}
+.home-view .menu-home .item-menu-home a{
+	display: block;
+	text-decoration: none;
+}
+.home-view .menu-home .item-menu-home a img{
+	display: block;
+	width: 80%;
+	max-width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+.home-view .menu-home .item-menu-home a p{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	color: #fff ;
+	font-weight: bold;
+	text-transform: uppercase;
+	/*font-family: "Bebas Neue", Arial, sans-serif;*/
+	font-size: 12px;
+}
+.home-view .info{
+	width: 80%;
+	max-width: 80%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.home-view{
+
+}
+
+/* Tela sobre */
+.about-view{
+	
+	background-image: url(../img/bg_geometrico_3.png) !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    background-position: bottom 0px;
+    background-color: rgba(18,136,192,.55);
+    background-position-y: bottom !important;
+}
+
+
+/*  Tela de preletores, oficinas e de bandas */
+
+.leacturers-view{}
+.leacturers-view .person, .bands-view .person, .workshops-view .person{
+	width: 92%;
+	max-width: 92%;
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+	border-bottom: solid 1px #eee !important;
+}
+.leacturers-view .person .img-person, .bands-view .person .img-person, .workshops-view .person .img-person{
+	width: 100%;
+	max-width: 100%;
+}
+
+
+/*
+ *	Tela de programacao 
+ *
+ */
+.programming-view{}
+.programming-view .day{}
+
+.programming-view .line{
+	border-bottom: solid 1px #eee !important;
+}
+.programming-view .line-oficina{
+	border-bottom: solid 1px #f3f3f3 !important;
+}
+.programming-view .line-oficina .local{
+	padding-left: 10px;
+}
+
+.programming-view .horario{
+ 	font-family: "Bebas Neue", Arial, sans-serif;
+ 	display: inline-block;
+ 	margin-right: 5px;
+ 	border-right: solid 1px #333;
+ 	/*font-weight: bold;*/
+ 	color: #333;
+ 	font-size: 1.3em;
+ 	margin-top: 15px;
+}
+.programming-view .local{
+ 	color: #2192ba;
+ 	font-size: .9em;
+ 	font-style: italic;
+ 	display: inline;
+ 	width: auto;
+}
+.programming-view .atividade{
+	display: block;
+	width: 100%;
+	/*border-bottom: solid 1px #eee !important;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1.1em;
+}
+.programming-view .atividade-descricao{
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-style: italic;
+	/*border-bottom: solid 1px #eee !important;*/
+}
+
+
+/*
+ *
+ *	Tela perguntas frequentes
+ *
+ *
+ */
+.faq-view{}
+.faq-view .pergunta-box{
+ 	border-bottom: solid 1px #f3f3f3 !important;
+ 	padding-top: 20px;
+ 	padding-bottom: 20px;
+}
+
+.faq-view .pergunta-box .pergunta{
+	font-size: 20px;
+}
+.faq-view .pergunta-box .pergunta span{
+	color: #2192ba;
+	font-family: "Bebas Neue", Arial, sans-serif;
+	font-size: 35px;
+}
+.faq-view .pergunta-box .resposta{
+	font-style: italic;
+}
+
+/*
+ *
+ *	Tela de contato
+ *
+ *
+ */
+.contact-view{}
+.contact-view input, .contact-view textarea{
+	width: 90%;
+	margin: 20px auto;
+	display: block;
+	border-bottom: solid 1px #999 !important;
+	border-right: solid 1px #999 !important;
+	padding: 15px;
+	padding-left: 15px;
+}
+.contact-view input{
+	height: 50px;
+}
+
+.contact-view textarea{
+	height: 200px;
+	resize: none;
+}
+.contact-view button.btn-send{
+	width: 90%;
+	margin: 20px auto;
+	display: block;
+	height: 70px;
+	background: #2192ba;
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-family: "Bebas Neue", Arial, sans-serif;
+	letter-spacing: .2em
+}
+
+
+/*
+ *
+ *	Tela dos parceiros
+ *
+ *
+ */
+.partners-view{}
+
+.partners-view .logo-parceiro{
+	width: 52%;
+	max-width: 52%;
+	display: block;
+	margin: 0px auto;
+	margin-top: 30px;
+	padding-bottom: 15px;
+}
+.partners-view ion-content{
+	padding: 0 !important
+}
+.partners-view h1{
+	margin: 30px;
+	margin-bottom: 0px !important;
+}
+.partners-view .area-patrocinio h4{
+	color: #2192ba;
+}
+.partners-view .area-patrocinio{
+	padding: 30px;
+}
+.partners-view .area-apoio{
+	padding: 30px;
+	background: #2192ba;
+}
+.partners-view .area-apoio *{
+	color: #fff;
+}
+.partners-view .area-apoio .apoio{
+	display: block;
+	margin: 0 auto;
+}
+
+
+/*
+ *
+ *
+ *	Place view 
+ *
+ */
+.place-view{}
+.place-view ion-content{
+	padding: 0px;
+}
+.place-view ion-content iframe{
+	height: 100%;
+	width: 100%;
+}
+.angular-google-map-container { 
+  height: 100%; 
+}
+
+
+
+.popup{}
+.popup .popup-head h3.popup-title{
+	font-size: 30px;
+}
+.popup button{
+	background: #2192ba !important;
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-family: "Bebas Neue", Arial, sans-serif;
+	letter-spacing: .1em
+}
+

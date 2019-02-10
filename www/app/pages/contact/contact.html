@@ -1,0 +1,24 @@
+
+<ion-view view-title="Contato" class="view contact-view"> 
+	<ion-nav-bar class="bar-stable">
+		<ion-nav-buttons side="left">
+			<button class="button button-icon button-clear ion-navicon" style="display: block !important" menu-toggle="left">
+			</button>
+		</ion-nav-buttons>
+	</ion-nav-bar>
+	<ion-content>
+		<h1>Fale conosco</h1>
+
+		<p>
+			Preencha os campos abaixo: 
+		</p>
+		<div class="area-form-feedback">
+			<input type="text" name="name" ng-model="feedback.name" placeholder="Digite seu nome">
+			<input type="mail" name="email" ng-model="feedback.email" placeholder="Digite seu email">
+			<div class="area-textarea">
+				<textarea placeholder="O que quer falar conosco?" ng-model="feedback.opinion"></textarea>
+			</div>
+			<button class="md-raised btn-submit btn-send" ng-click="sendMessage(feedback)"> Enviar </button>
+		</div>
+	</ion-content>
+</ion-view>
